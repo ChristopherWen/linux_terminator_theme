@@ -1,0 +1,27 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
+title_transmit_bg_color = "#d1c0a5" #淡冷褐色作为激活窗口的titlebar背景色
+title_transmit_fg_color = "#000000" #激活tiltebar的白色文字
+title_inactive_bg_color = "#313131" #未激活时黑色作为titlebar背景色
+title_inactive_fg_color = "#ff0000" #未激活时titlebar的红色文字
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    font = Monospace 14
+    scrollback_infinite = True
+    use_system_font = False
+#    show_titlebar = False #是否显示titlebar
+
+#    cursor_color = "#c9c9c9" #光标颜色
+    foreground_color = "#eeeeee" #窗口命令行字体颜色，也是文本类文件名的颜色
